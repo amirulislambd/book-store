@@ -1,6 +1,6 @@
 import bookImg from "../../assets/pngwing 1.png";
 
-const HomePage = () => {
+const Banner = () => {
   return (
     <div className="hero bg-base-200 min-h-[70vh] container py-10 mx-auto ">
       <div className="hero-content w-full flex-col lg:flex-row-reverse text-center lg:text-start justify-around">
@@ -17,4 +17,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Banner;

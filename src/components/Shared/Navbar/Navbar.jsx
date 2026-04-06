@@ -10,7 +10,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <nav className="bg-base-100 shadow-sm mb-5 lg:mb-10 py-2 sticky top-0 z-10">
+    <div className="navbar container mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,6 +50,7 @@ const Navbar = () => {
         <button className="btn btn-accent text-white">Sign Up</button>
       </div>
     </div>
+    </nav>
   );
 };
 
