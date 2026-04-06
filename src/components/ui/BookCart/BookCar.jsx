@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaRegStar } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const BookCar = ({book}) => {
     return (
-        <div className="card bg-base-100  shadow-sm ">
+        <Link to={`/bookDetails/${book.bookId}`} className="card bg-base-100  shadow-sm ">
         <figure className='bg-zinc-100 py-5'>
           <img
           className="max-h-56 rounded-xl"
@@ -14,7 +15,7 @@ const BookCar = ({book}) => {
         <div className="card-body">
           <div>
               {
-                  book.tags.map(tag=><div className="badge badge-soft badge-success">{tag}</div>)
+                  book.tags.map((tag, i)=><div key={i}  className="badge badge-soft badge-success">{tag}</div>)
               }
           </div>
           <h2 className="card-title font-bold">
@@ -29,7 +30,7 @@ const BookCar = ({book}) => {
             <div className="font-bold flex items-center gap-1 "><p>{book.rating}</p><FaRegStar /></div>
           </div>
         </div>
-      </div>
+      </Link>
     );
 };
 
