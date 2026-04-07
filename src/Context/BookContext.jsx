@@ -1,15 +1,20 @@
 import React, { createContext, useState } from "react";
 import { toast } from "react-toastify";
+import { getReadListFromLocalDB, getWishListFromLocalDB, setReadListToLocalDB, setWishListToLocalDB } from "../components/Utils/localDB";
 
 // const [storedBook, setStoredBook] = useState([]);
 
 export const BooksContext = createContext();
 
 const BookContext = ({ children }) => {
-  const [storedBook, setStoredBook] = useState([]);
-  const [storedWishList, setStoredWishList] = useState([]);
+  const [storedBook, setStoredBook] = useState(()=>getReadListFromLocalDB());
+  const [storedWishList, setStoredWishList] = useState(()=>getWishListFromLocalDB());
+
+
 
   const handleBookRead = (readBook) => {
+
+    setReadListToLocalDB(readBook)
     console.log(readBook);
     const isExistBook = storedBook.find(
       (book) => book.bookId === readBook.bookId,
@@ -24,7 +29,7 @@ const BookContext = ({ children }) => {
     }
   };
   const handleWishList = (readBook) => {
-    console.log(readBook);
+    setWishListToLocalDB(readBook)
 
     const isAddedMarkAsRead = storedBook.find(book=>book.bookId === readBook.bookId)
 
