@@ -1,6 +1,6 @@
 # Book Vibe - Modern Online Book Store
 
-![Book Vibe Hero Section](https://i.ibb.co.com/your-uploaded-image-link-here.png)
+![Book Vibe Hero Section](https://i.ibb.co.com/CpDZVNpk/screencapture-book-store-phi-brown-73-vercel-app-2026-04-09-15-25-11.png)
 
 **Books to freshen up your bookshelf** — A beautiful and responsive book discovery platform.
 
@@ -25,7 +25,6 @@ Live Demo: [https://book-store-phi-brown-73.vercel.app/](https://i.ibb.co.com/Cp
   - Home
   - Listed Books
   - Pages to Read
-- **Authentication Ready** (Sign In & Sign Up buttons)
 - **Fully Responsive Design** (Mobile-first approach)
 - **Modern & Clean UI** using Tailwind CSS
 
