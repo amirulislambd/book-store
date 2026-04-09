@@ -1,16 +1,46 @@
-# React + Vite
+# Book Vibe - Modern Online Book Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Book Vibe Hero Section](https://i.ibb.co.com/your-uploaded-image-link-here.png)
 
-Currently, two official plugins are available:
+**Books to freshen up your bookshelf** — A beautiful and responsive book discovery platform.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Project Overview
 
-## React Compiler
+**Book Vibe** is a modern frontend web application for browsing and discovering books. Users can explore a wide collection of books with beautiful cover images, author details, genre tags, and ratings.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was built as a **full responsive book store UI** with clean design and smooth user experience. It includes a hero banner, book grid, navigation, and authentication buttons (Sign In / Sign Up).
 
-## Expanding the ESLint configuration
+Live Demo: [https://book-store-phi-brown-73.vercel.app/](https://i.ibb.co.com/CpDZVNpk/screencapture-book-store-phi-brown-73-vercel-app-2026-04-09-15-25-11.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+- **Stunning Hero Section** with featured book highlight
+- **Book Grid Layout** – 3 columns on desktop, responsive on mobile
+- **Detailed Book Cards** showing:
+  - Book cover
+  - Title & Author
+  - Genre tags (Fiction, Classic, Fantasy, etc.)
+  - Star rating
+- **Top Navigation**:
+  - Home
+  - Listed Books
+  - Pages to Read
+- **Authentication Ready** (Sign In & Sign Up buttons)
+- **Fully Responsive Design** (Mobile-first approach)
+- **Modern & Clean UI** using Tailwind CSS
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology                          |
+|-------------|-------------------------------------|
+| Frontend    | ReactJS                |
+| Styling     | Tailwind CSS                        |
+| Deployment  | Vercel                              |
+| Language    | TypeScript / JavaScript             |
+
+## 🚀 How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/book-vibe.git
+   cd book-vibe
